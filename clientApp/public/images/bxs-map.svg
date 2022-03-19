@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bxs-map-2" transform="translate(2.000000, 0.000000)" fill="#3C83F6" fill-rule="nonzero">
+            <g id="bxs-map">
+                <path d="M8,0 C3.589,0 -8.14446184e-05,3.589 -8.14446184e-05,7.995 C-0.029,14.44 7.696,19.784 8,20 C8,20 16.029,14.44 16.0000784,8 C16.0000784,3.589 12.411,0 8,0 Z M8,12 C5.79,12 4,10.21 4,8 C4,5.79 5.79,4 8,4 C10.21,4 12,5.79 12,8 C12,10.21 10.21,12 8,12 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
