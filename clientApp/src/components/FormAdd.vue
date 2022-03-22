@@ -287,7 +287,7 @@ const getMaxId = (data) => {
 onMounted(async () => {
   console.log('Hi, This is FormAdd.vue')
 
-  await ApiService.getAllApis(`http://localhost:3333/destinations`)
+  await ApiService.getDestinations()
     .then((response) => {
       myCityData.value = response.data
       show.value = true

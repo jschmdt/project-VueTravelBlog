@@ -26,7 +26,9 @@ const error = ref(null)
 
 onMounted(async () => {
   console.log('Hi, This is TravelList.vue')
-  await ApiService.getAllApis(`http://localhost:3333/destinations`)
+  await ApiService.getAllApis(
+    `${import.meta.env.BASE_URL}:${import.meta.env.VITE_DB_PORT}/destinations`
+  )
     .then((response) => {
       console.log(response.data)
       myCityData.value = response.data

@@ -2,7 +2,7 @@
 <template>
   <Transition name="slide-fade">
     <div v-if="show" class="w-full">
-      <div class="flex sm:overflow-hidden h-screen sm:h-2/6 items-center">
+      <div class="flex sm:overflow-hidden h-screen sm:h-4/6 items-center mb-2">
         <div class="absolute inset-0">
           <img
             class="h-full w-full object-cover"
@@ -172,7 +172,7 @@
         <hr class="my-4" />
         <h2 class="text-2xl font-bold mb-4">About the creator</h2>
 
-        <div class="grid gap-12 sm:grid-cols-2 sm:grid-rows-2 sm:gap-2 grid-flow-row-dense mb-4">
+        <div class="grid gap-12 sm:grid-cols-2 sm:grid-rows-1 sm:gap-2 grid-flow-row-dense mb-4">
           <div>
             <h3 class="text-lg font-bold mb-2">Address</h3>
             <div class="flex flex-col line-height-4 gap-6">

@@ -1,17 +1,18 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-var corsOptions = {
-  origin: 'http://localhost:3000',
-};
+// var corsOptions = {
+//   origin: 'http://localhost:3000',
+// };
 const mockData = require('./db.json');
 
 const app = express();
-const PORT = process.env.PORT || 3333;
+const API_PORT = process.env.API_PORT || 3333;
 
-app.use(cors(corsOptions)); // parse requests of content-type - application/json
+// app.use(cors(corsOptions)); // parse requests of content-type - application/json
 app.use(express.json());
 app.use(cors());
+// app.use('/node_modules', express.static('node_modules'));
 
 app.get('/', (req, res) => {
   // res.send("Yo!");
@@ -104,6 +105,6 @@ app.get('*', function (req, res) {
   res.json('404 / Not Found');
 });
 
-app.listen(PORT, () => {
-  console.log(`listening on http://localhost:${PORT}`);
+app.listen(API_PORT, () => {
+  console.log(`listening on http://localhost:${API_PORT}`);
 });

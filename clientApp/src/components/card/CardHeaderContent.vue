@@ -4,8 +4,8 @@
       class="flex flex-col w-2/3 justify-start group-hover:-translate-x-96 duration-700 transition ease-in-out"
     >
       <h1 class="color text-3xl font-bold">
-        {{ Helpers.FirstWordBeforeComma(props.city.cityName) }}
-        {{ Helpers.GetFlagEmoji(props.weather.country) }}
+        {{ Helpers.FirstWordBeforeComma(props.city?.cityName) }}
+        {{ Helpers.GetFlagEmoji(props.weather?.country) }}
       </h1>
       <TempMain :weather="weather" />
     </div>

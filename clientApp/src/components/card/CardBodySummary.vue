@@ -8,7 +8,7 @@
         <span
           class="text-sm text-gray-500 group-hover:text-black transition duration-1000 ease-out"
         >
-          {{ Helpers.FirstWordBeforeComma(props.city.cityName) }}, {{ props.weather.country }}
+          {{ Helpers.FirstWordBeforeComma(props.city?.cityName) }}, {{ props.weather?.country }}
         </span>
       </div>
 
