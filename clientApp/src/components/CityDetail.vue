@@ -13,7 +13,10 @@
           <ChevronLeftIcon class="h-5 w-5 pr-1" /><span>Overview</span>
         </RouterLink>
 
-        <div v-if="openWeatherData" class="flex justify-between gap-2 mb-4">
+        <div
+          v-if="openWeatherData && myCityDetails.cityName"
+          class="flex justify-between gap-2 mb-4"
+        >
           <h2 class="cityName color text-4xl font-bold">
             {{ Helpers.FirstWordBeforeComma(myCityDetails?.cityName) }}
             {{ Helpers.GetFlagEmoji(openWeatherData?.sys.country) }}
